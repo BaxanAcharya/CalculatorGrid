@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     etText.setText("");
                 } else {
                     first = Double.parseDouble(etText.getText().toString());
-                    executeifSubtract = true;
+                    executeifDivision = true;
                     etText.setText(null);
                 }
                 break;
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     etText.setText("");
                 } else {
                     first = Double.parseDouble(etText.getText().toString());
-                    executeifSubtract = true;
+                    executeifMultiplication = true;
                     etText.setText(null);
                 }
                 break;
@@ -153,17 +153,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     executeifAddition = false;
                 }
 
-                if (executeifSubtract == true) {
+               else if (executeifSubtract == true) {
                     etText.setText(first - second + "");
                     executeifSubtract = false;
                 }
 
-                if (executeifMultiplication == true) {
+                else   if (executeifMultiplication == true) {
                     etText.setText(first * second + "");
                     executeifMultiplication = false;
                 }
 
-                if (executeifDivision == true) {
+                else  if (executeifDivision == true) {
                     etText.setText(first / second + "");
                     executeifDivision = false;
                 }
